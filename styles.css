@@ -7,9 +7,11 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #222;
   background: #f7f5f0;
+  letter-spacing: 1.2px;
+  line-height: 1.2;
 }
 /* Link Styles */
 
@@ -57,7 +59,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/new_background.jpg') no-repeat center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -67,39 +69,48 @@ header {
 }
 header .profile-image {
   margin-top: 50px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  width: 130px;
+  height: 160px;
+  border-radius: 15%;
+  transition: all .8s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.1);
 }
 .tag {
   background-color: #efefef;
-  color: black;
+  color: #222;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 } 
+.tag:hover {
+  color: #efefef;
+  background-color: transparent;
+  transition: all .5s;
+} 
 .location {
   background-color: #222;
-  color: yellow;
+  color: #efefef;
 }
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
-  text-align: left;
+  text-align: center;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #02a235;
+  transform: scale(1.05);
+}
+.card:hover:last-of-type {
+  border-color: #0399ff;
+  transform: scale(1.05);
 }
 
 ul.skills {
@@ -110,7 +121,7 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #02a235;
   color: white;
   padding: 5px 10px;
   margin: 2px;
@@ -118,6 +129,11 @@ ul.skills {
 
 .skills li:nth-child(odd) {
   background: #0399ff;
+}
+
+.skills li:hover{
+  transform: scale(1.1);
+  transition: all .5s;
 }
 
 footer {
@@ -149,11 +165,10 @@ a.social {
   height: 30px;
   background-size: 30px 30px;
   opacity: .4;
+  transform: scale(1.2);
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
+
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
